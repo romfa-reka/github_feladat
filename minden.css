@@ -1,0 +1,27 @@
+body{
+    background-color: plum;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    text-align: center;
+    font-size: pixels/120em;
+    font-variant: small-caps;
+}
+.kuty{
+    text-align: center;
+}
+
+#lablec {
+    padding: 10px;
+    text-align: right;
+}
+p{
+    text-align: center;
+}
+#mas{
+    text-align: justify;
+}
