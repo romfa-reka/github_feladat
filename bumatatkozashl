@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bemutatkozashl.css" rel="stylesheet" type="text/css"> 
+    <title>Bemutatkozó Oldal</title>
+</head>
+<body>
+    <header>
+        <h1>Bemutatkozó Oldal</h1>
+    </header>
+    <div class="container">
+        <h2>Honfi Levente</h2>
+        <br>
+        <ul>
+            <li>Hobby:<i> Éjszakai vezetés, energetikai mérések</i></li>
+            <li>Kedvenc Sport: <i>Edző terem</i></li>
+            <li>Kedvenc Állat: </li>
+        </ul>
+        <div class="kedvencallat">
+        <img src="kutya.jpg" alt="Shiba Inu, Japán származásu kutya fajta">
+        <p><i>Shiba Inu, Japán származásu kutya fajta.</i></p>
+        </div>
+        <a href="osimodell.html"><h4>Vissza</h4></a> <!-- Vissza a főoldalra ( Laci )-->
+    </div>
+</body>
+</html>
