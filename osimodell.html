@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="osimodell.css" rel="stylesheet" type="text/css"> 
+    <title>Open Systems Interconnection Model</title>
+</head>
+<body>
+    <header>
+        <h1>Open Systems Interconnection Model</h1>
+    </header>
+    <div class="container">
+        <h2>Osi Modell</h2>
+        <p>Miként tud egy számítógép kommunikálni egy másik számítógéppel. ISO7498-ban lett definiálva.</p>
+
+        <h2>7 Rétegből áll:</h2>
+        <ol>
+            <li>
+                <h3>Fizikai réteg:</h3>
+                <ul>
+                    <li>Bitek hibamentes átvitele</li>
+                    <li>Kábelen vagy rádiós kapcsolaton kell továbbítani ( KOAX, Optikai )</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Adatkapcsolati réteg:</h3>
+                <ul>
+                    <li>MAC-címzés</li>
+                    <li>Hibakeresés és kezelés</li>
+                    <li>Kapcsolók</li>
+                    <li>PPP, HDLC</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Hálózati réteg:</h3>
+                <ul>
+                    <li>Szegmensekből csomag lesz</li>
+                    <li>Útvonal választá</li>
+                    <li>IP címzés ( IPv4, IPv6, ARP )</li>
+                    <li>Forgalomirányítás</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Szállítási réteg:</h3>
+                <ul>
+                    <li>Szegmentálás, viszony rétegből érkező adatok kisebb adategységekre bontja,
+                        szegmensekre. Minden szegmens tartalmaz egy forrást, célportszámot, illetve sorszámot</li>
+                    <li>Forgalom szabályozás, külső és fogadó közti megfelelő kommunikációs sebesség</li>
+                    <li>TCP/UDP</li>
+                    <ul>
+                        <li>TCP összeköttetés alapú / UDP összeköttetés mentes</li>
+                        <li>TCP nyugtáz / UDP nem nyugtáz</li>
+                        <li>TCP minden adatnak hiánytalanul megkell érkeznie, www, FTP, Email / UDP
+                            streaming, TFTP, DNS</li>
+                    </ul>
+                </ul>
+            </li>
+            <li>
+                <h3>Viszony réteg:</h3>
+                <ul>
+                    <li>Kapcsolat felépítése</li>
+                    <li>Adatküldés és fogadás engedélyezése</li>
+                    <li>Logikai kapcsolat bontása és újraindítása</li>
+                    <li>NetBIOS, Winsock</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Megjelenítési réteg:</h3>
+                <ul>
+                    <li>Adatot fogadja az alkalmazási rétegtől</li>
+                    <li>Számok és szövegek átalakítása kettes számrendszerbeli számokká</li>
+                    <li>Adattörmörítés ( veszteséges & veszteségmentes )</li>
+                    <li>Küldő adatai titkosítása és fogadó visszafejtése</li>
+                    <li>ASCII, JPG, GIF, MPEG</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Alkalmazási réteg:</h3>
+                <ul>
+                    <li>Alkalmazások melyek használják a hálózatunkat ( böngészők, discord, steam ) Böngészők: http és https protokollok, valamint SMTP, POP3, IMAP, Telnet, FTP, SNMP és DHCP</li>
+                    <li>A réteg biztosítja, hogy a különböző hálózati szolgáltatások melyik protokoll segítségével legyen képes az együttműködésre</li>
+                </ul>
+            </li>
+        </ol>
+        <p><b>Ez fordítva zajlik le, amennyiben valaki fogadja az általunk küldött adatot.</b></p>
+        <br>
+        <h2>DHCP</h2>
+        <p>A DHCP (Dynamic Host Configuration Protocol) egy hálózati kommunikációs protokoll, amely automatikusan konfigurálja a hálózati eszközök IP-címét és más hálózati beállításait egy TCP/IP hálózaton belül. A DHCP szerverek IP-címeket és egyéb hálózati konfigurációs információkat osztanak ki a hálózati klienseknek, amikor azok csatlakoznak a hálózathoz vagy amikor azoknak lejár az aktuális IP-címük érvényességi ideje. A DHCP lehetővé teszi a dinamikus IP-cím-kezelést, ami hatékonyabb hálózati erőforrások kihasználását eredményezi, mivel a kliensek csak akkor kapnak IP-címet, amikor valóban szükség van rá. Emellett a DHCP segít megelőzni az IP-cím konfliktusokat és megkönnyíti a hálózati karbantartást.</p>
+        <img src="dhcp.png" alt="DHCP folyamata: DHCPDiscover, DHCPOffer, DHCPRequest, DHCPack, Bound">
+        <br>
+        <a href="bemutatkozashl.html"><h4>Honfi Levente</h4></a>     
+        <a href="bemutatkozashl.html"><h4>Vissza</h4></a> <!-- Vissza a főoldalra ( Laci )-->
+    </div>
+</body>
+</html>
